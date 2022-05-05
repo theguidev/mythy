@@ -1,0 +1,73 @@
+.ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  background-color: #1c1521;
+}
+.ul div {
+  display: flex;
+  gap: 16px;
+}
+
+.logo_ajuda {
+  display: flex;
+}
+
+.stats_config {
+  display: flex;
+}
+
+.ul li > img {
+  height: 40px;
+  filter: invert(100%) sepia(0%) saturate(3851%) hue-rotate(288deg)
+    brightness(115%) contrast(80%);
+  cursor: pointer;
+}
+
+.ul p {
+  text-transform: uppercase;
+  color: #e5e5e5;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.icon_nav {
+  transition: 2s;
+  box-shadow: 3px 5px 5px rgb(0 0 0 / 15%);
+  height: calc(100vh - 107.5px);
+  position: absolute;
+  color: #e5e5e5;
+  animation: fadeIn 1s;
+  padding: 4px;
+  max-width: 460px;
+  width: 100%;
+}
+
+.form {
+  margin-top: 5rem;
+  width: 100%;
+  margin: 0 auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.form input {
+  border: 0;
+  outline: 0;
+  height: 173px;
+  border-radius: 5px;
+  background: #1c1521;
+}
+
+@keyframes fadeIn {
+  from {
+    width: 0;
+    color: transparent;
+  }
+  to {
+    width: 100%;
+    color: #fff;
+  }
+}
