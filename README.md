@@ -13,7 +13,6 @@
 
 - Wordle/Termo-like game, made with TypeScript.
 - Login system, also made w/ TypeScript.
-- 
 
 ## ⚒️Getting Started
 
