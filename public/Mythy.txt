@@ -1,86 +1,132 @@
-Localização: Europa
 
-Afrodite
+
+{Mitologias}
+
+[Folclore Brasileiro]
+
+Boitatá
+Boto
+Cuca
+Curupira
+Lobisomem
+Saci
+
+[Mitologia Grega]
+
+Afrodite (Vênus)
 Apolo
-Ares
-Ártemis
-Athenas
+Aquiles
+Ares (Marte)
+Ártemis (Diana)
+Atena (Minerva)
+Caronte
+Caos
+Centauro
+Cérbero
+Ciclope
 Cratos
-Cronos
-Epimeteu
-Eros
-Deméter
+Cronos (Saturno)
+Deméter (Ceres)
 Dionísio
-Gaia
-Hades
+Édipo
+Epimeteu
+Equidna
+Eros (Cupido)
+Fênix
+Gaia (Terra)
+Grifo
+Hades (Plutão)
+Harpia
 Hefesto
-Hélio
+Hélio (Sol)
 Hera
-Hermes
+Hércules
+Hermes (Mercúrio)
 Héstia
-Poseidon
+Hidra
+Hipnos
+Medusa
+Minotauro
+Nêmesis (Justiça)
+Ninfa
+Pandora
+Pégaso
+Perseu
+Poseidon (Netuno) 
 Prometeu
-Urano
-Têmis
-Zeus
+Quimera
+Reia
+Sátiro
+Sereia
+Tártaro
+Teseu
+Tifão
+Tritão
+Urano (Céu)
+Zeus (Júpiter)
 
+[Mitologia Nórdica]
 
+Asgard
+Brunilda
 Freya
 Freyr
-Frigga
-Hell
+Hela
+Jotun
+Kraken
 Loki
-Njord
 Odim
-Syf
+Siegfried
+Sigrún
+Sleipnir
 Thor
-Tyr
-Vali
-Vidar
+Valquíria
 Ymir
 
-Localização: África
+[Mitologia Egípcia]
 
 Anúbis
 Anúquis
 Bastet
-Hapi
+Esfinge
 Hórus
 Ísis
-Maat
 Quenúbis
 Tote
 Uadjet
 
-Localização: Ásia
-
-Brahma
-Devi
-Ganesha
-Kali
-Manasa
-Parvati
-Sati
-Savitri
-Shiva
-Vishnu
+[Mitologia Japonesa]
 
 Amaterasu
-Fūjin
-Hachiman
 Inari
 Izanagi
 Izanami
 Kami
 Nigini
-Omoikane
-Raijin
 Ryūjin
-Suijin
+Shinigami
 Susanoo
 Tsukuyomi
 
+[Religião Hindu]
+
+Brahma
+Devi
+Ganesha
+Shiva
+
+Anu
+Assur
+Baal
+Enquidu
+Inana
+Gilgamés
+
+[Ateísta]
+
 Buda
+
+[Monoteísta]
 
 YHWH
 
@@ -88,7 +134,13 @@ Alá
 
 Jesus
 
-Mythy
+[Indígena]
+
+Tupã
+Iara
+
+
+[Mythy]
 
 Mythy é um jogo web inspirado por Wordle, Termo e Start. Focado nas diferentes 
 mitologias do mundo, o objetivo principal é descobrir qual é o(a) deus(a) do dia.

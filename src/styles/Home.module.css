@@ -77,6 +77,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: 'Nunito';
+  user-select: none;
 }
 
 .form input:focus {
@@ -85,8 +86,16 @@
   background: var(--tertiary);
 }
 
-.form input:disabled {
-  opacity: 0.41;
+.form .correct {
+  background: var(--green) !important;
+}
+
+.letterExists {
+  background: var(--yellow) !important;
+}
+
+.disabled {
+  opacity: 0.40;
 }
 
 @keyframes fadeIn {

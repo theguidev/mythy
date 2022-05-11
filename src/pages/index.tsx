@@ -1,13 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, ChangeEvent, KeyboardEvent } from 'react';
+import { useState, ChangeEvent, KeyboardEvent, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLandmark, faQuestionCircle, faScroll, faGear, faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Home() {
   const [showAside, setShowAside] = useState(false);
+  const [wordSubmited, setWordSubmited] = useState(false);
+  const [rightWord, setRightWord] = useState("pente");
+  const firstInput = useRef<HTMLInputElement>(null)
   const [attempts, setAttempts] = useState([{
     id: 0,
     disabled: false,
@@ -16,22 +19,32 @@ export default function Home() {
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
@@ -43,22 +56,32 @@ export default function Home() {
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
@@ -70,22 +93,32 @@ export default function Home() {
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
@@ -97,22 +130,32 @@ export default function Home() {
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
@@ -124,105 +167,88 @@ export default function Home() {
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
   {
     id: 5,
-    value: '',
     disabled: true,
+    value: '',
     inputs: [
       {
         id: 0,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 1,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 2,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 3,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
       {
         id: 4,
         value: '',
+        rightPlace: false,
+        exists: false,
       },
     ]
   },
 ]);
 
-  const handleChange = (id: number, attemptId: number, e: ChangeEvent<HTMLInputElement>) => {
-    const newAttempts = [...attempts];
-    const attemptToUpdate = attempts.find(attempt => attempt.id === attemptId);
-    const inputToUpdate = attemptToUpdate.inputs.find(input => input.id === id);
-
-    const newInput = {
-      ...inputToUpdate,
-      value: e.target.value,
-    }
-    if(!newInput.value) {
-      const prevInput = e?.target.previousElementSibling as HTMLInputElement;
-      prevInput.focus()
-    } else {
-      const nextInput = e?.target.nextElementSibling as HTMLInputElement;
-      nextInput.focus();
-    }
-
-    attemptToUpdate.inputs.splice(id, 1, newInput);
-    newAttempts.splice(attemptId, 1, attemptToUpdate);
-
-    setAttempts(newAttempts);
-  }
-
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>, id: number, attemptId: number) => {
+    e.preventDefault()
     const newAttempts = [...attempts];
     const attemptToUpdate = attempts.find(attempt => attempt.id === attemptId);
     const inputToUpdate = attemptToUpdate.inputs.find(input => input.id === id);
 
     const {key} = e
+    const nextInput = e?.currentTarget.nextElementSibling as HTMLInputElement;
+    const prevInput = e?.currentTarget.previousElementSibling as HTMLInputElement;
 
     if(key === "Enter") {
       const canBeSubmited = attemptToUpdate.inputs.every(input => input.value)
       if(canBeSubmited) {
-        const wordArr = [];
-        attemptToUpdate.inputs.forEach(input => wordArr.push(input.value));
-        const [word] = wordArr;
-        attemptToUpdate.value = word;
-        attemptToUpdate.disabled = true;
-
-        const nextAttempt = newAttempts.find(attempt => attempt.id === attemptId + 1);
-        const nextAttemptIndex = newAttempts.findIndex(attempt => attempt.id === attemptId + 1);
-        nextAttempt.disabled = false;
-        
-        newAttempts.splice(attemptId, 1, attemptToUpdate);
-        newAttempts.splice(nextAttemptIndex, 1, nextAttempt);
-
-        setAttempts(newAttempts);
-
-        const next = e.currentTarget.nextElementSibling as HTMLInputElement;
-        console.log(next)
-        return next.focus()
+        handleSubmit(attemptToUpdate, newAttempts, attemptId, e)
       } 
     }
 
@@ -232,9 +258,6 @@ export default function Home() {
       ...inputToUpdate,
       value: key,
     }
-    
-    const prevInput = e?.currentTarget.previousElementSibling as HTMLInputElement;
-    const nextInput = e?.currentTarget.nextElementSibling as HTMLInputElement;
 
     switch (key) {
       case 'Backspace':
@@ -258,8 +281,53 @@ export default function Home() {
     setAttempts(newAttempts);
   }
 
+  const handleSubmit = (attemptToUpdate, newAttempts, attemptId, e) => {
+    let word = "";
+    
+    const newInputs = attemptToUpdate.inputs.map((input, index) => {
+      word = word.concat(input.value);
+      if(rightWord[index] === input.value) {
+        return {
+          ...input,
+          rightPlace: true,
+        }
+      } else if (rightWord.includes(input.value)) {
+        return {
+          ...input,
+          exists: true,
+        }
+      } else {
+        return {
+          ...input
+        }
+      }
+    });
+    const nextAttempt = newAttempts.find(attempt => attempt.id === attemptId + 1);
+    const nextAttemptIndex = newAttempts.findIndex(attempt => attempt.id === attemptId + 1);
+    if(word !== rightWord) nextAttempt.disabled = false;
+    attemptToUpdate.disabled = true;
+    attemptToUpdate.inputs = newInputs;
+    attemptToUpdate.value = word;
+    
+    console.log(newAttempts, attemptToUpdate)
+
+    newAttempts.splice(attemptId, 1, attemptToUpdate);
+    newAttempts.splice(nextAttemptIndex, 1, nextAttempt);
+    console.log(newAttempts, attemptToUpdate)
+
+    setAttempts(newAttempts);
+    
+  }
+
+  useEffect(() => {
+    firstInput.current?.focus()
+  }, [firstInput])
+
   return (
     <div>
+      <Head>
+        <title>Mythy</title>
+      </Head>
       <header>
           <ul className={styles.ul}>
               <div>
@@ -277,19 +345,27 @@ export default function Home() {
       {showAside && 
         <aside className={styles.icon_nav}>
             <nav>
-              <p>Olá. Seja bem vindo(a) ao Mythy:<br/> Um jogo web para quem gosta das ciências humanas. <br/> Tente adivinhar o deus(a) do dia de hoje.<br/><br/> Mitologias incluídas:<br/> - Egípcia<br/> - Grega<br/> -Hindu<br/> - Japonesa<br/> - Nórdica<br/> - Miscelânicas (monoteístas e outras religiões menores) </p>
+              <p>Olá. Seja bem vindo(a) ao Mythy:<br/> Um jogo web para quem gosta das ciências humanas. <br/> Tente adivinhar o deus(a) do dia de hoje.<br/><br/> Mitologias incluídas:<br/> - Egípcia<br/> - Grega<br/> - Hindu<br/> - Japonesa<br/> - Nórdica<br/> - Miscelânicas (monoteístas e outras religiões menores) </p>
             </nav>  
         </aside>
       }
 
       <section className={styles.guess}>
-          <form className={styles.form}>
-            {attempts.map(attempt => {
-              return attempt.inputs.map((input) => (
-                <input disabled={attempt.disabled} maxLength={1} onKeyDown={(e) => handleKeyDown(e, input.id, attempt.id)} key={input.id} value={input.value}/> // onChange={(e) => handleChange(input.id, attempt.id, e)}
+          <div className={styles.form}>
+            {attempts.map((attempt) => {  
+              return attempt.inputs.map((input, index) => (
+                <input 
+                  ref={(input.id === 0 && !attempt.disabled) ? firstInput : null} 
+                  disabled={attempt.disabled}
+                  maxLength={1} 
+                  onKeyDown={(e) => handleKeyDown(e, input.id, attempt.id)} 
+                  key={input.id} 
+                  value={input.value}
+                  className={input.rightPlace ? styles.correct : input.exists ? styles.letterExists : (!attempt.value && attempt.disabled) && styles.disabled }
+                /> // onChange={(e) => handleChange(input.id, attempt.id, e)}
               ))
             })}
-          </form>
+          </div>
       </section>
     </div>
   )
