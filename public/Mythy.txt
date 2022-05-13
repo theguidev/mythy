@@ -95,6 +95,17 @@ Quenúbis
 Tote
 Uadjet
 
+[Mitologia Mesopotâmica]
+
+Ahura
+Anu
+Assur
+Baal
+Enquidu
+Inana
+Gilgamés
+Mazda
+
 [Mitologia Japonesa]
 
 Amaterasu
@@ -115,12 +126,6 @@ Devi
 Ganesha
 Shiva
 
-Anu
-Assur
-Baal
-Enquidu
-Inana
-Gilgamés
 
 [Ateísta]
 
