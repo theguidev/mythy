@@ -72,9 +72,8 @@ $ yarn
 # Start the client
 $ npm run dev
 # or
-$ yarn dev```
-
-After your pull request is merged, you can delete your branch
+$ yarn dev
+```
 
 ## 🔮 Deploy
 
