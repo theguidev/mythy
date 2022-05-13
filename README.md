@@ -32,9 +32,6 @@
 The games objetive is to discover what is the word, that always have some relation
 with the different mythologies and religions of the world.
 
-To see the **api**, click here: [PROJECT_NAME Rest API](https://github/eliasgcf/readme-template)</br>
-To see the **mobile client**, click here: [PROJECT_NAME Mobile](https://github/eliasgcf/readme-template)
-
 ## 🕹️ Technologies
 
 Technologies that I used to develop this web client
