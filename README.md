@@ -29,7 +29,7 @@
 ## 🔰  About the project
 
 **Mythy** is an indie project of a game inspired by Wordle, Termo and Start. 
-The games objetive is to discover what is the word, that always have some relation
+The game's objetive is to discover what is the word, that always have some relation
 with the different mythologies and religions of the world.
 
 ## 🕹️ Technologies
