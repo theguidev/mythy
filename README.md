@@ -55,7 +55,7 @@ Technologies that I used to develop this web client
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/EliasGcf/NOME_DO_REPO.git && cd NOME_DO_REPO
+$ git clone https://github.com/theguidev/mithy.git && cd mythy
 ```
 
 **Follow the steps below**
