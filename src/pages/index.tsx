@@ -17,9 +17,166 @@ export default function Home() {
   const aboutUsModalRef = useRef<HTMLDivElement>(null);
   const firstInput = useRef<HTMLInputElement>(null);
   const [attempts, setAttempts] = useState(mockAttempts);
+  const [keys, setKeys] = useState([
+    {
+      value: "q",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "w",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "e",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "r",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "t",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "y",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "u",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "i",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "o",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "p",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "a",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "s",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "d",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "f",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "g",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "h",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "j",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "k",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "l",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "z",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "x",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "c",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "v",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "b",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "n",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+    {
+      value: "m",
+      wasTyped: false,
+      isOnWord: false,
+      rightPlace: false,
+    },
+  ]);
 
   const handleClick = useCallback((e: any) => {
-    console.log(e.target, aboutUsModalRef.current);
     if (
       aboutUsModalRef.current &&
       !aboutUsModalRef.current.contains(e.target)
@@ -103,17 +260,31 @@ export default function Home() {
 
     const newInputs = attemptToUpdate.inputs.map((input, index) => {
       word = word.concat(input.value);
+      const newKeys = [...keys];
+      const keyToUpdate = newKeys.find((key) => key.value === input.value);
+      const keyToUpdateIndex = keys.findIndex(
+        (key) => key.value === input.value
+      );
+      keyToUpdate.wasTyped = true;
       if (rightWord[index] === input.value) {
+        keyToUpdate.rightPlace = true;
+        newKeys.splice(keyToUpdateIndex, 1, keyToUpdate);
+        setKeys(newKeys);
         return {
           ...input,
           rightPlace: true,
         };
       } else if (rightWord.includes(input.value)) {
+        keyToUpdate.isOnWord = true;
+        newKeys.splice(keyToUpdateIndex, 1, keyToUpdate);
+        setKeys(newKeys);
         return {
           ...input,
           exists: true,
         };
       } else {
+        newKeys.splice(keyToUpdateIndex, 1, keyToUpdate);
+        setKeys(newKeys);
         return {
           ...input,
         };
@@ -130,11 +301,8 @@ export default function Home() {
     attemptToUpdate.inputs = newInputs;
     attemptToUpdate.value = word;
 
-    console.log(newAttempts, attemptToUpdate);
-
     newAttempts.splice(attemptId, 1, attemptToUpdate);
     newAttempts.splice(nextAttemptIndex, 1, nextAttempt);
-    console.log(newAttempts, attemptToUpdate);
 
     setAttempts(newAttempts);
   };
@@ -192,7 +360,13 @@ export default function Home() {
               atualizada diariamente. <br />
               <br /> Porém, diferentemente dos clássicos Termo e Wordle, a
               palavra possui sempre uma relação com uma das
-              <b> mitologias</b> e/ou <b>religiões</b> existentes no mundo.
+              <b> mitologias</b> e/ou <b>religiões</b> existentes no mundo.{" "}
+              <br /> <br />
+              Clique{" "}
+              <Link href="https://github.com/theguidev/mythy">
+                <a>aqui </a>
+              </Link>{" "}
+              e acesse o repositório GitHub do projeto.
             </p>
           </div>
         </div>
@@ -219,6 +393,21 @@ export default function Home() {
             ));
           })}
         </div>
+      </section>
+
+      <section className={styles.keyboard}>
+        {keys.map((key) => (
+          <div
+            key={key.value}
+            className={
+              key.rightPlace
+                ? styles.correctKey
+                : key.isOnWord
+                  ? styles.isOnWord
+                  : key.wasTyped ? styles.wasTyped : styles.notTyped
+            }
+          >{key.value}</div>
+        ))}
       </section>
     </div>
   );

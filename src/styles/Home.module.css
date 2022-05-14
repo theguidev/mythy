@@ -2,16 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 60px;
+  padding: 1.28rem 6rem;
   background-color: var(--purple_darker);
 }
 .ul > div {
   display: flex;
-  gap: 60px;
+  gap: 6rem;
 }
 
 .ul li svg {
-  height: 40px;
+  height: 4rem;
   cursor: pointer;
   color: var(--light);
   transition: 0.4s;
@@ -25,7 +25,7 @@
 .ul > h1 {
   text-transform: uppercase;
   color: var(--light);
-  font-size: 4rem;
+  font-size: 6.4rem;
   font-weight: 900;
   transition: 0.5s;
   user-select: none;
@@ -43,11 +43,11 @@
 }
 
 .form {
-  margin-top: 8rem;
+  margin-top: 12.8rem;
   display: grid;
-  grid-template-columns: repeat(5, 80px);
-  grid-template-rows: repeat(6, 80px);
-  gap: 12px;
+  grid-template-columns: repeat(5, 6rem);
+  grid-template-rows: repeat(6, 6rem);
+  gap: 1.2rem;
 }
 .form input {
   caret-color: transparent;
@@ -56,9 +56,9 @@
   border: 0;
   outline: 0;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background: var(--purple_darker);
-  font-size: 2.4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -121,13 +121,13 @@
 }
 
 .modal {
-  max-width: 600px;
+  max-width: 60rem;
   color: var(--light);
-  padding: 30px;
+  padding: 3rem;
   background-color: var(--purple_lighter);
-  border-radius: 10px;
+  border-radius: 1rem;
   width: 50%;
-  animation: modal_in 0.6s cubic-bezier(1, -0.01, 0, 0.99);
+  animation: modal_in 0.6s cubic-bezier(0.31, 0, 0.08, 0.99);
 }
 
 @keyframes modal_in {
@@ -142,20 +142,55 @@
 
 .modal > h2 {
   font-weight: 900;
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 .modal > p {
-  font-size: 1.35rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
 .modal p a {
   color: #d1bee2;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .modal p a:hover {
   color: #dfa7ff;
+}
+
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 450px;
+  margin: 5rem auto;
+}
+
+.notTyped, .wasTyped, .isOnWord, .correctKey {
+  color: white;
+  height: 50px;
+  width: 40px;
+  padding: 8px;
+  margin: 4px;
+  background: var(--purple_lighter);
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.wasTyped {
+  background: var(--purple_darker);
+}
+
+.isOnWord {
+  background: var(--yellow);
+}
+
+.correctKey {
+  background: var(--green);
 }
