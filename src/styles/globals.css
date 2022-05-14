@@ -5,6 +5,8 @@
 }
 
 :root {
+  font-size: 62.5%;
+
   --purple: #130e16;
   --purple_darker: #1c1521;
   --purple_lighter: #281d2e;
