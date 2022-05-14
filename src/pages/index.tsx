@@ -1,29 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import {
-  useState,
-  ChangeEvent,
-  KeyboardEvent,
-  useRef,
-  useEffect,
-  useCallback,
-} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLandmark,
-  faQuestionCircle,
-  faScroll,
-  faGear,
-  faCircleQuestion,
+  faCircleQuestion, faGear, faLandmark, faScroll
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
 import Link from "next/link";
+import {
+  KeyboardEvent, useCallback, useEffect, useRef, useState
+} from "react";
 import { mockAttempts } from "../../attempts";
-import { truncate } from "fs";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [wordSubmited, setWordSubmited] = useState(false);
-  const [rightWord, setRightWord] = useState("a");
+  const [rightWord, setRightWord] = useState("tutor");
   const [isAboutUsModalOpen, setIsAboutUsModalOpen] = useState(false);
   const aboutUsModalRef = useRef<HTMLDivElement>(null);
   const firstInput = useRef<HTMLInputElement>(null);
@@ -223,8 +212,8 @@ export default function Home() {
                   input.rightPlace
                     ? styles.correct
                     : input.exists
-                    ? styles.letterExists
-                    : !attempt.value && attempt.disabled && styles.disabled
+                      ? styles.letterExists
+                      : !attempt.value && attempt.disabled && styles.disabled
                 }
               /> // onChange={(e) => handleChange(input.id, attempt.id, e)}
             ));
