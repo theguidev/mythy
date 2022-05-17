@@ -8,11 +8,12 @@ import {
   KeyboardEvent, useCallback, useEffect, useRef, useState
 } from "react";
 import { mockAttempts } from "../../attempts";
+import { api } from "../services/api";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [wordSubmited, setWordSubmited] = useState(false);
-  const [rightWord, setRightWord] = useState("tutor");
+  const [rightWord, setRightWord] = useState("");
   const [isAboutUsModalOpen, setIsAboutUsModalOpen] = useState(false);
   const aboutUsModalRef = useRef<HTMLDivElement>(null);
   const firstInput = useRef<HTMLInputElement>(null);
@@ -192,6 +193,18 @@ export default function Home() {
     };
   }, [handleClick]);
 
+  const getWord = useCallback(async () => {
+    const { data } = await api.get("/word");
+    const word: string = data.word;
+    setRightWord(word);
+  }, [])
+
+
+  useEffect(() => {
+    getWord();
+
+  }, [getWord])
+
   const handleKeyDown = (
     e: KeyboardEvent<HTMLInputElement>,
     id: number,
@@ -296,7 +309,7 @@ export default function Home() {
     const nextAttemptIndex = newAttempts.findIndex(
       (attempt) => attempt.id === attemptId + 1
     );
-    if (word !== rightWord) nextAttempt.disabled = false;
+    if ((word !== rightWord) && nextAttempt) nextAttempt.disabled = false;
     attemptToUpdate.disabled = true;
     attemptToUpdate.inputs = newInputs;
     attemptToUpdate.value = word;
@@ -381,7 +394,7 @@ export default function Home() {
                 maxLength={1}
                 onKeyDown={(e) => handleKeyDown(e, input.id, attempt.id)}
                 key={input.id}
-                value={input.value}
+                defaultValue={input.value}
                 className={
                   input.rightPlace
                     ? styles.correct
