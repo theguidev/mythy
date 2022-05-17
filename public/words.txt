@@ -59,7 +59,7 @@
   category: "mythology",
   region: "greek",
   level: "medium",
-  hint: ["É grego.", "Tem aparência humana.", "O deus do sol."]
+  hint: ["É grego.", "Tem aparência humana/era um lugar.", "O deus do sol."]
 }
 
 {
@@ -75,14 +75,14 @@
   category: "mythology",
   region: "greek",
   level: "medium",
-  hint: ["É grego.", "Ten aparência humana.", "O deus da guerra."]
+  hint: ["É grego.", "Tem aparência humana.", "O deus da guerra."]
 }
 
 {
   value: "ártemis",
   category: "mythology",
   region: "greek",
-  level: "high",
+  level: "medium",
   hint: ["É grega.", "Tem aparência humana.", "Deusa da caça."]
 }
 
@@ -100,7 +100,7 @@
   category: "mythology",
   region: "greek",
   level: "easy",
-  hint: ["É grego.", "Aparência de um titã.", "Vive carregando o mundo nas costas."]
+  hint: ["É grego.", "Aparência de um humano.", "Vive carregando o mundo nas costas."]
 }
 
 {
@@ -140,7 +140,7 @@
   category: "mythology",
   region: "greek",
   level: "medium",
-  hint: ["Gregos.", "Suas aparências são (até que) humanas.", "Filhos de cronos, possuem um olho só."]
+  hint: ["Gregos.", "A aparência é (até que) humana.", "Filhos de cronos, possuem um olho só."]
 }
 
 {
@@ -156,7 +156,7 @@
   category: "mythology",
   region: "greek",
   level: "easy",
-  hint: ["É grego.", "Aparência de um titã.", "O deus do tempo."]
+  hint: ["É grego.", "Aparência de um humano.", "O deus do tempo."]
 }
 
 {
@@ -168,14 +168,6 @@
 }
 
 {
-  value: "a",
-  category: "mythology",
-  region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
-}
-
-{
   value: "dionísio",
   category: "mythology",
   region: "greek",
@@ -184,266 +176,570 @@
 }
 
 {
-  value: "a",
+  value: "édipo",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "hard",
+  hint: ["É grego.", "Era um humano.", "Resolveu o enigma da esfinge."]
 }
 
 {
-  value: "a",
+  value: "epimeteu",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Tem aparência de um humano.", "Criou os animais e os homens."]
 }
 
 {
-  value: "a",
+  value: "equidna",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "extreme",
+  hint: ["É grega.", "Aparência humana/de uma serpente.", "A mãe de todos os monstros."]
 }
 
 {
-  value: "a",
+  value: "eros",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Sua aparência é humana.", "O deus do amor e do erotismo."]
 }
 
 {
-  value: "a",
+  value: "fênix",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grega.", "Aparência de uma ave.", "Depois de morrer, volta das cinzas."]
+}
+
+
+{
+  value: "gaia",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grega.", "Tem aparência humana/era um lugar.", "A deusa do planeta Terra."]
 }
 
 {
-  value: "a",
+  value: "grifo",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É (talvez) grego.", "Tem aparência de um leão/de uma águia.", "Ser metade leão, metade águia."]
 }
 
 {
-  value: "a",
+  value: "hades",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Tem aparência humana.", "O deus que comanda o submundo."]
 }
 
 {
-  value: "a",
+  value: "harpia",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "extreme",
+  hint: ["São gregas.", "Aparência é de uma mulher/ave de rapina.", "Roubavam comida do Rei Fineu."]
 }
 
 {
-  value: "a",
+  value: "hefesto",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Tem aparência de um humano.", "O ferreiro do Olimpo."]
 }
 
 {
-  value: "a",
+  value: "hélio",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Sua aparência é humana.", "O (segundo) deus do sol."]
 }
 
 {
-  value: "a",
+  value: "hera",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grega.", "Aparência humana.", "Esposa de Zeus, a deusa do casamento."]
 }
 
 {
-  value: "a",
+  value: "hércules",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grego.", "Ele era um humano.", "Ele fez os doze trabalhos."]
 }
 
 {
-  value: "a",
+  value: "hermes",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Aparência de um humano.", "Vestia sandálias, e por isso era veloz."]
 }
 
 {
-  value: "a",
+  value: "héstia",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grega.", "Sua aparência é humana.", "A deusa do lar e da família."]
 }
 
 {
-  value: "a",
+  value: "hidra",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grega.", "Aparência de dragão/serpente.", "Corte sua cabeça, e duas nascerão no lugar."]
 }
 
 {
-  value: "a",
+  value: "hipnos",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "hard",
+  hint: ["É grego.", "Tem aparência humana.", "Deus grego do sono."]
 }
 
 {
-  value: "a",
+  value: "medusa",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grega.", "Aparência humana/de serpentes.", "Olhe para ela e vire pedra."]
 }
 
 {
-  value: "a",
+  value: "minotauro",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Aparência de humano/touro.", "Meio homem e meio touro, morava num labirinto."]
 }
 
 {
-  value: "a",
+  value: "nêmesis",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "hard",
+  hint: ["É grega.", "Sua aparência é humana.", "Deusa grega do destino."]
 }
 
 {
-  value: "a",
+  value: "ninfa",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["São gregas.", "Têm aparência humana.", "Espíritos ligados a um objeto ou lugar."]
 }
 
 {
-  value: "a",
+  value: "nix",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grega.", "Aparência humana.", "A personificação da noite."]
 }
 
 {
-  value: "a",
+  value: "oceano",
   category: "mythology",
   region: "greek",
   level: "a",
-  hint: ["É grego.", "a.", "a."]
+  hint: ["É grego.", "Sua aparência é humano.", "Deus dos oceanos."]
 }
 
 {
-  value: "a",
+  value: "pandora",
   category: "mythology",
   region: "greek",
   level: "a",
-  hint: ["É grego.", "a.", "a."]
+  hint: ["É grega.", "Ela é humana.", "Abriu uma caixa e liberou os males do mundo."]
 }
 
 {
-  value: "a",
+  value: "pégaso",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grego.", "Aparência de um cavalo.", "O cavalo alado nascido do sangue da Medusa."]
 }
 
 {
-  value: "a",
+  value: "perseu",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Foi um humano.", "Matou a Medusa com a ajuda de Atena, Hades e Hermes."]
 }
 
 {
-  value: "a",
+  value: "poseidon",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["É grego.", "Tinha aparência humana.", "O deus dos mares."]
 }
 
 {
-  value: "a",
+  value: "prometeu",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Tinha aparência humana.", "Roubou o fogo de Hefesto para dar aos homens."]
 }
 
 {
-  value: "a",
+  value: "quimera",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "hard",
+  hint: ["É grega.", "Sua aparência era híbrida.", "Um híbrido entre dois animais."]
 }
 
 {
-  value: "a",
+  value: "reia",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grega.", "Tinha aparência humana.", "Deusa da maternindade, esposa de Cronos."]
 }
 
 {
-  value: "a",
+  value: "sátiro",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["Eram gregos.", "Tinham aparência de humanos/bodes.", "Seres metade homem metade bode."]
 }
 
 {
-  value: "a",
+  value: "sereia",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "easy",
+  hint: ["São gregas.", "Aparência de humano/peixe.", "Eram mulheres, mas peixes da cintura para baixo."]
 }
 
 {
-  value: "a",
+  value: "tártaro",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grego.", "Tinha aparência humana/era um lugar.", "Popularmente, os quintos (sic)."]
 }
 
 {
-  value: "a",
+  value: "têmis",
   category: "mythology",
   region: "greek",
-  level: "a",
-  hint: ["É grego.", "a.", "a."]
+  level: "medium",
+  hint: ["É grega.", "Sua aparência é humana.", "A deusa grega da justiça."]
 }
 
+{
+  value: "teseu",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Foi humano.", "O herói que derrotou o Minotauro."]
+}
+
+{
+  value: "tifão",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Aparência de um gigante.", "Um enorme monstro, o deus da destruição."]
+}
+
+{
+  value: "tritão",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Sua aparência é humana/de um peixe.", "Sereias, mas são homens."]
+}
+
+{
+  value: "urano",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Sua aparência é humana/é um lugar.", "O deus do céu."]
+}
+
+{
+  value: "zeus",
+  category: "mythology",
+  region: "greek",
+  level: "easy",
+  hint: ["É grego.", "Sua aparência é humana.", "O deus dos trovões, rei dos deuses."]
+}
+
+{
+  value: "ceres",
+  category: "mythology",
+  region: "roman",
+  level: "medium",
+  hint: ["É romana.", "Sua aparência é humana.", "Deusa da colheita."
+}
+
+{
+  value: "cupido",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Têm aparência humana.", "Usa seu arco e flecha para formar casais."]
+}
+
+{
+  value: "diana",
+  category: "mythology",
+  region: "roman",
+  level: "medium",
+  hint: ["É romana.", "Tem aparência humana.", "Deusa da caça."]
+}
+
+{
+  value: "júpiter",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Sua aparência é humana.", "O deus dos trovões, rei dos deuses."]
+}
+
+{
+  value: "marte",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tem aparência humana.", "O deus da guerra."]
+}
+
+{
+  value: "mercúrio",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Aparência de um humano.", "Vestia sandálias, e por isso era veloz."]
+}
+
+{
+  value: "minerva",
+  category: "mythology",
+  region: "roman",
+  level: "medium",
+  hint: ["É romana.", "Aparência humana.", "Deusa da sabedoria."]
+}
+
+{
+  value: "netuno",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tinha aparência humana.", "O deus dos mares."]
+}
+
+{
+  value: "plutão",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tem aparência humana.", "O deus que comanda o submundo."]
+}
+
+{
+  value: "saturno",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Aparência de um humano.", "O deus do tempo."]
+}
+
+{
+  value: "sol",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tem aparência humana.", "O deus do sol."]
+}
+
+{
+  value: "terra",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tem aparência humana/era um lugar.", "A deusa do planeta Terra."]
+}
+
+{
+  value: "vênus",
+  category: "mythology",
+  region: "roman",
+  level: "easy",
+  hint: ["É romano.", "Tem aparência humana.", "Deusa da beleza."]
+}
+
+{
+  value: "vulcano",
+  category: "mythology",
+  region: "roman",
+  level: "medium",
+  hint: ["É romano.", "Tem aparência de um humano.", "O ferreiro do Olimpo."]
+}
+
+{
+  value: "asgard",
+  category: "mythology",
+  region: "norse",
+  level: "medium",
+  hint: ["É nórdico.", "Era um lugar.", "O reino dos deuses."]
+}
+
+{
+  value: "brunilda",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdica.", "Tem aparência humana.", "Era uma valquíria, amante de Siegfried."]
+}
+
+{
+  value: "freya",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdica.", "Tem a aparência de um humano.", "Deusa do amor, fertilidade e beleza."]
+}
+
+{
+  value: "freyr",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "Tem a aparência de um humano.", "Deus da fertilidade e prosperidade."]
+}
+
+{
+  value: "hela",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "A deusa nórdica dos mortos."]
+}
+
+{
+  value: "helheim",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "É um lugar.", "O submundo nórdico."]
+}
+
+{
+  value: "jotun",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "Tem aparência de gigantes.", "Os gigantes nórdicos."]
+}
+
+{
+  value: "jotunheim",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "É um lugar.", "O mundo onde habitavam os gigantes."]
+}
+
+{
+  value: "kraken",
+  category: "mythology",
+  region: "norse",
+  level: "easy",
+  hint: ["É nórdico.", "Tem aparência de uma lula/polvo.", "Destruía navios e era temido pelos marinheiros."]
+}
+
+{
+  value: "loki",
+  category: "mythology",
+  region: "norse",
+  level: "easy",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "O deus das mentiras."]
+}
+
+{
+  value: "odin",
+  category: "mythology",
+  region: "norse",
+  level: "easy",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "O principal deus nórdico."]
+}
+
+{
+  value: "siegfried",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "É um humano.", "Um lendário herói nórdico."]
+}
+
+{
+  value: "sigrún",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "Uma das valquíria da mitología nórdica."]
+}
+
+{
+  value: "sleipnir",
+  category: "mythology",
+  region: "norse",
+  level: "hard",
+  hint: ["É nórdico.", "Tem aparência de um cavalo.", "O cavalo de Odin, filho de Loki."]
+}
+
+{
+  value: "thor",
+  category: "mythology",
+  region: "norse",
+  level: "easy",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "O deus dos trovões."]
+}
+
+{
+  value: "valhalla",
+  category: "mythology",
+  region: "norse",
+  level: "medium",
+  hint: ["É nórdico.", "É um lugar.", "O palácio de Odin em Asgard."]
+}
+
+{
+  value: "valquíria",
+  category: "mythology",
+  region: "norse",
+  level: "medium",
+  hint: ["São nórdicas.", "Possuem aparência humana.", "Conduzem os mortos até Valhalla."]
+}
+
+{
+  value: "ymir",
+  category: "mythology",
+  region: "norse",
+  level: "extreme",
+  hint: ["É nórdico.", "Tem aparência de um humano.", "A primeira criatura viva da mitologia nórdica."]
+}

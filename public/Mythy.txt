@@ -12,7 +12,7 @@ Saci
 [Mitologia Grega]
 
 Afrodite (Vênus)
-Apolo
+Apolo (Sol)
 Aquiles
 Ares (Marte)
 Ártemis (Diana)
@@ -36,8 +36,8 @@ Gaia (Terra)
 Grifo
 Hades (Plutão)
 Harpia
-Hefesto
-Hélio (Sol)
+Hefesto (Vulcano)
+Hélio
 Hera
 Hércules
 Hermes (Mercúrio)
@@ -48,6 +48,7 @@ Medusa
 Minotauro
 Nêmesis (Justiça)
 Ninfa
+Nix
 Oceano
 Pandora
 Pégaso
@@ -68,21 +69,20 @@ Zeus (Júpiter)
 
 [Mitologia Romana]
 
-Vênus
-Marte
-Diana
-Minerva
-Saturno
 Ceres
 Cupido
-Terra
-Plutão
-Sol
-Mercúrio
-Justiça
-Netuno
-Céu
+Diana
 Júpiter
+Marte
+Mercúrio
+Minerva
+Netuno
+Plutão
+Saturno
+Sol
+Terra
+Vênus
+Vulcano
 
 [Mitologia Nórdica]
 
@@ -91,14 +91,17 @@ Brunilda
 Freya
 Freyr
 Hela
+Helheim
 Jotun
+Jotunheim
 Kraken
 Loki
-Odim
+Odin
 Siegfried
 Sigrún
 Sleipnir
 Thor
+Vallhalla
 Valquíria
 Ymir
 
