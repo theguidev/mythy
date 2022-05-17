@@ -1,5 +1,3 @@
-
-
 {Mitologias}
 
 [Folclore Brasileiro]
@@ -19,6 +17,7 @@ Aquiles
 Ares (Marte)
 Ártemis (Diana)
 Atena (Minerva)
+Atlas
 Caronte
 Caos
 Centauro
@@ -64,6 +63,24 @@ Tifão
 Tritão
 Urano (Céu)
 Zeus (Júpiter)
+
+[Mitologia Romana]
+
+Vênus
+Marte
+Diana
+Minerva
+Saturno
+Ceres
+Cupido
+Terra
+Plutão
+Sol
+Mercúrio
+Justiça
+Netuno
+Céu
+Júpiter
 
 [Mitologia Nórdica]
 

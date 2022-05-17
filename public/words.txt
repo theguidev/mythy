@@ -1,0 +1,449 @@
+{
+  value: "boitatá",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "Tem a aparência de uma serpente.", "É associado com o fogo."]
+}
+
+{
+  value: "boto",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "Tem aparência humana/de um ser aquático.", "Usa terno branco."]
+}
+
+{
+  value: "cuca",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "Tem aparência de um jacaré.", "Uma feiticeira."]
+}
+
+{
+  value: "curupira",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "A aparência é humana.", "Seus pés são virados para trás."]
+}
+
+{
+  value: "lobisomem",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "Tem aparência de um canino.", "Surge nas sextas de lua cheia.."]
+}
+
+{
+  value: "saci",
+  category: "mythology",
+  region: "brazil",
+  level: "easy",
+  hint: ["É brasileiro.", "Sua aparência é humana.", "Tem só uma perna."]
+}
+
+{
+  value: "afrodite",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grega.", "Tem aparência humana.", "Deusa da beleza."]
+}
+
+{
+  value: "apolo",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Tem aparência humana.", "O deus do sol."]
+}
+
+{
+  value: "aquiles",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Possui aparência humana.", "Machucou seu calcanhar."]
+}
+
+{
+  value: "ares",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Ten aparência humana.", "O deus da guerra."]
+}
+
+{
+  value: "ártemis",
+  category: "mythology",
+  region: "greek",
+  level: "high",
+  hint: ["É grega.", "Tem aparência humana.", "Deusa da caça."]
+}
+
+{
+  value: "atena",
+  category: "mythology",
+  region: "greek",
+  level: "easy",
+  hint: ["É grega.", "Aparência humana.", "Deusa da sabedoria."]
+}
+
+
+{
+  value: "atlas",
+  category: "mythology",
+  region: "greek",
+  level: "easy",
+  hint: ["É grego.", "Aparência de um titã.", "Vive carregando o mundo nas costas."]
+}
+
+{
+  value: "caronte",
+  category: "mythology",
+  region: "greek",
+  level: "hard",
+  hint: ["É grego.", "Tem aparência humana.", "Barqueiro dos espíritos."]
+}
+
+{
+  value: "caos",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Sua aparência é o alfa e o ômega.", "O mais antigo deus grego, o primordial."]
+}
+
+{
+  value: "centauro",
+  category: "mythology",
+  region: "greek",
+  level: "easy",
+  hint: ["São gregos.", "Tem aparências humanas/de equinos.", "Criaturas com parte do corpo de outra espécie."]
+}
+
+{
+  value: "cérbero",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Possui aparência de um canino.", "Guarda-costas do inferno."]
+}
+
+{
+  value: "ciclope",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["Gregos.", "Suas aparências são (até que) humanas.", "Filhos de cronos, possuem um olho só."]
+}
+
+{
+  value: "cratos",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "A aparência é humana.", "Popularmente (sic), o bom de guerra."]
+}
+
+{
+  value: "cronos",
+  category: "mythology",
+  region: "greek",
+  level: "easy",
+  hint: ["É grego.", "Aparência de um titã.", "O deus do tempo."]
+}
+
+{
+  value: "deméter",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grega.", "Sua aparência é humana.", "Deusa da colheita."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "dionísio",
+  category: "mythology",
+  region: "greek",
+  level: "medium",
+  hint: ["É grego.", "Tem aparência humana.", "O deus do vinho."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+
+{
+  value: "a",
+  category: "mythology",
+  region: "greek",
+  level: "a",
+  hint: ["É grego.", "a.", "a."]
+}
+

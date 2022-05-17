@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.28rem 6rem;
-  background-color: var(--purple_darker);
+  padding: 0.8rem 6rem;
+  background-color: var(--purple-900);
 }
 .ul > div {
   display: flex;
@@ -13,7 +13,7 @@
 .ul li svg {
   height: 4rem;
   cursor: pointer;
-  color: var(--light);
+  color: var(--white);
   transition: 0.4s;
 }
 
@@ -24,11 +24,10 @@
 
 .ul > h1 {
   text-transform: uppercase;
-  color: var(--light);
-  font-size: 6.4rem;
+  color: var(--white);
+  font-size: 5rem;
   font-weight: 900;
   transition: 0.5s;
-  user-select: none;
 }
 
 .ul h1:hover {
@@ -43,12 +42,13 @@
 }
 
 .form {
-  margin-top: 12.8rem;
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(5, 6rem);
-  grid-template-rows: repeat(6, 6rem);
+  grid-template-columns: repeat(5, 8rem);
+  grid-template-rows: repeat(6, 8rem);
   gap: 1.2rem;
 }
+
 .form input {
   caret-color: transparent;
   width: 100%;
@@ -57,20 +57,18 @@
   outline: 0;
   height: 100%;
   border-radius: 0.5rem;
-  background: var(--purple_darker);
-  font-size: 3.8rem;
+  background: var(--purple-900);
+  font-size: 3.3rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   text-transform: uppercase;
   font-family: "Nunito";
-  user-select: none;
 }
 
 .form input:focus {
-  /* border: .4rem solid var(---secondary);  */
   animation: sizing 0.3s;
-  background: var(--purple_lighter);
+  background: var(--purple-700);
 }
 
 .form .correct {
@@ -92,7 +90,7 @@
   }
   to {
     width: 100%;
-    color: #fff;
+    color: var(--white);
   }
 }
 @keyframes sizing {
@@ -107,84 +105,36 @@
   }
 }
 
-.modal_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  z-index: 999;
-  display: grid;
-  place-items: center;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.modal {
-  max-width: 60rem;
-  color: var(--light);
-  padding: 3rem;
-  background-color: var(--purple_lighter);
-  border-radius: 1rem;
-  width: 50%;
-  animation: modal_in 0.6s cubic-bezier(0.31, 0, 0.08, 0.99);
-}
-
-@keyframes modal_in {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.modal > h2 {
-  font-weight: 900;
-  font-size: 4.5rem;
-  margin-bottom: 2rem;
-}
-
-.modal > p {
-  font-size: 2rem;
-  text-align: justify;
-}
-
-.modal p a {
-  color: #d1bee2;
-  transition: 0.3s;
-}
-
-.modal p a:hover {
-  color: #dfa7ff;
-}
-
-
 .keyboard {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 450px;
+  max-width: 45rem;
   margin: 5rem auto;
+  font-weight: 700;
+  font-size: 3.3rem;
+  text-align: center;
 }
 
-.notTyped, .wasTyped, .isOnWord, .correctKey {
-  color: white;
-  height: 50px;
-  width: 40px;
+.notTyped,
+.wasTyped,
+.isOnWord,
+.correctKey {
+  color: var(--white);
+  height: 6rem;
+  width: 5.5rem;
   padding: 8px;
-  margin: 4px;
-  background: var(--purple_lighter);
+  margin: 0.4rem;
+  background: var(--purple-700);
   text-transform: uppercase;
   border-radius: 5px;
   transition: 1s;
 }
 
 .wasTyped {
-  background: var(--purple_darker);
+  background: var(--purple-900);
 }
 
 .isOnWord {
@@ -193,4 +143,85 @@
 
 .correctKey {
   background: var(--green);
+}
+
+.help_title {
+  margin-bottom: 1rem !important;
+  line-height: 4.5rem;
+}
+
+.help_subtitle,
+.hint_subtitle {
+  padding-top: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hint_subtitle {
+  margin-bottom: 1rem;
+}
+
+.help_img {
+  margin-bottom: 1rem;
+}
+
+.help_img p {
+  font-size: 2rem;
+}
+
+.help_img img {
+  height: auto;
+  width: 30rem;
+  margin-block: 1rem;
+}
+.hint_button {
+  font-family: "Nunito";
+  font-weight: 600;
+  color: var(--white);
+  font-size: 2rem;
+
+  width: 25rem;
+  height: 5rem;
+  border: none;
+  border-radius: 1.2rem;
+  background: var(--purple-500);
+
+  transition: 0.3s cubic-bezier(0.31, 0, 0.08, 0.99);
+
+  margin-block: 1.5rem;
+}
+
+.hint_button:hover {
+  background: var(--purple-400);
+}
+
+.hint_button:focus {
+  transform: scale(1.05);
+  background: var(--purple-200);
+  /* animation: buttonClick 0.5s cubic-bezier(0.31, 0, 0.08, 0.99); */
+}
+
+@keyframes buttonClick {
+  0% {
+    transform: scale(1);
+    background: var(--purple-400);
+  }
+
+  50% {
+    transform: scale(1.05);
+    background: var(--purple-100);
+  }
+
+  100% {
+    transform: scale(1);
+    background: var(--purple-400);
+  }
+}
+
+.hints {
+  display: flex;
+}
+
+.hint {
 }

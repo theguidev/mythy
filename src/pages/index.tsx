@@ -1,22 +1,25 @@
 import {
-  faCircleQuestion, faGear, faLandmark, faScroll
+  faCircleQuestion,
+  faGear,
+  faLandmark,
+  faScroll,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Link from "next/link";
-import {
-  KeyboardEvent, useCallback, useEffect, useRef, useState
-} from "react";
+import { KeyboardEvent, useCallback, useEffect, useRef, useState } from "react";
 import { mockAttempts } from "../../attempts";
+import { Modal } from "../components/Modal";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [wordSubmited, setWordSubmited] = useState(false);
   const [rightWord, setRightWord] = useState("tutor");
-  const [isAboutUsModalOpen, setIsAboutUsModalOpen] = useState(false);
-  const aboutUsModalRef = useRef<HTMLDivElement>(null);
   const firstInput = useRef<HTMLInputElement>(null);
+  const button_helpRef = useRef<HTMLButtonElement>(null);
   const [attempts, setAttempts] = useState(mockAttempts);
+  const [isModalAboutUsOpen, setIsModalAboutUsOpen] = useState(false);
+  const [isModalHelpOpen, setIsModalHelpOpen] = useState(false);
   const [keys, setKeys] = useState([
     {
       value: "q",
@@ -176,22 +179,6 @@ export default function Home() {
     },
   ]);
 
-  const handleClick = useCallback((e: any) => {
-    if (
-      aboutUsModalRef.current &&
-      !aboutUsModalRef.current.contains(e.target)
-    ) {
-      setIsAboutUsModalOpen(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClick);
-    return () => {
-      document.removeEventListener("mousedown", handleClick);
-    };
-  }, [handleClick]);
-
   const handleKeyDown = (
     e: KeyboardEvent<HTMLInputElement>,
     id: number,
@@ -319,7 +306,7 @@ export default function Home() {
       <header>
         <ul className={styles.ul}>
           <div>
-            <li onClick={() => setIsAboutUsModalOpen(true)}>
+            <li onClick={() => setIsModalAboutUsOpen(true)}>
               <FontAwesomeIcon icon={faLandmark} />
             </li>
             <li>
@@ -337,40 +324,6 @@ export default function Home() {
           </div>
         </ul>
       </header>
-      {isAboutUsModalOpen && (
-        <div className={styles.modal_container}>
-          <div ref={aboutUsModalRef} className={styles.modal}>
-            <h2>Hey, hey, hey!</h2>
-            <p>
-              O <b>Mythy</b> é um projeto indie de um jogo web inspirado por{" "}
-              <Link href="https://nytimes.com/wordle">
-                <a>Wordle, </a>
-              </Link>
-              <Link href="https://term.ooo">
-                <a>Termo e </a>
-              </Link>
-              <Link href="https://startgame.app">
-                <a>Start. </a>
-              </Link>
-              <br />
-              <br />
-              Desenvolvido por <b>Guilherme Schneider</b> e{" "}
-              <b>Vinícius Hack,</b> o principal objetivo do jogo é utilizar suas
-              habilidades linguísticas para decifrar qual é a palavra,
-              atualizada diariamente. <br />
-              <br /> Porém, diferentemente dos clássicos Termo e Wordle, a
-              palavra possui sempre uma relação com uma das
-              <b> mitologias</b> e/ou <b>religiões</b> existentes no mundo.{" "}
-              <br /> <br />
-              Clique{" "}
-              <Link href="https://github.com/theguidev/mythy">
-                <a>aqui </a>
-              </Link>{" "}
-              e acesse o repositório GitHub do projeto.
-            </p>
-          </div>
-        </div>
-      )}
       <section className={styles.guess}>
         <div className={styles.form}>
           {attempts.map((attempt) => {
@@ -386,15 +339,14 @@ export default function Home() {
                   input.rightPlace
                     ? styles.correct
                     : input.exists
-                      ? styles.letterExists
-                      : !attempt.value && attempt.disabled && styles.disabled
+                    ? styles.letterExists
+                    : !attempt.value && attempt.disabled && styles.disabled
                 }
               /> // onChange={(e) => handleChange(input.id, attempt.id, e)}
             ));
           })}
         </div>
       </section>
-
       <section className={styles.keyboard}>
         {keys.map((key) => (
           <div
@@ -403,12 +355,85 @@ export default function Home() {
               key.rightPlace
                 ? styles.correctKey
                 : key.isOnWord
-                  ? styles.isOnWord
-                  : key.wasTyped ? styles.wasTyped : styles.notTyped
+                ? styles.isOnWord
+                : key.wasTyped
+                ? styles.wasTyped
+                : styles.notTyped
             }
-          >{key.value}</div>
+          >
+            {key.value}
+          </div>
         ))}
       </section>
+      {isModalAboutUsOpen && (
+        <Modal onClose={() => setIsModalAboutUsOpen(false)}>
+          <h2>Hey, hey, hey!</h2>
+          <p>
+            O <b>Mythy</b> é um projeto indie de um jogo web inspirado por{" "}
+            <Link href="https://nytimes.com/wordle">
+              <a>Wordle, </a>
+            </Link>
+            <Link href="https://term.ooo">
+              <a>Termo e </a>
+            </Link>
+            <Link href="https://startgame.app">
+              <a>Start. </a>
+            </Link>
+            <br />
+            <br />
+            Desenvolvido por <b>Guilherme Schneider</b> e <b>Vinícius Hack,</b>{" "}
+            o principal objetivo do jogo é utilizar suas habilidades
+            linguísticas para decifrar qual é a palavra, atualizada diariamente.{" "}
+            <br />
+            <br /> Porém, diferentemente dos clássicos Termo e Wordle, a palavra
+            possui sempre uma relação com uma das
+            <b> mitologias</b> e/ou <b>religiões</b> existentes no mundo. <br />{" "}
+            <br />
+            Clique{" "}
+            <Link href="https://github.com/theguidev/mythy">
+              <a>aqui </a>
+            </Link>{" "}
+            e acesse o repositório GitHub do projeto.
+          </p>
+        </Modal>
+      )}
+      <Modal onClose={() => setIsModalHelpOpen(false)}>
+        <h2 className={styles.help_title}>Ajuda</h2>
+        <h4 className={styles.help_subtitle}>Como jogar</h4>
+        <div className={styles.help_img}>
+          <p>Escolha uma palavra para começar o jogo:</p>
+          <img src="/static/YellowExample.png" />
+          <p>
+            No exemplo acima, a letra "T" está na palavra, mas não está no lugar
+            correto.
+          </p>
+          <img src="/static/GreenExample.png" />
+          <p>
+            Neste outro exemplo, percebemos que a letra "R" está na palavra, no
+            lugar correto.
+          </p>
+          <img src="/static/GrayExample.png" />
+          <p>E neste último exemplo, a letra "U" não está na palavra.</p>
+        </div>
+        <h4 className={styles.hint_subtitle}>Dicas</h4>
+        <p className={styles.hint_text}>
+          Clique no botão abaixo e resgate uma dica!
+        </p>
+        <div className={styles.hints}>
+          <button
+            ref={button_helpRef}
+            onFocus={() => {
+              setTimeout(() => {
+                button_helpRef.current.blur();
+              }, 300);
+            }}
+            className={styles.hint_button}
+          >
+            RESGATAR DICA
+          </button>
+          <p className={styles.hint}>Dica: É um deus grego.</p>
+        </div>
+      </Modal>
     </div>
   );
 }

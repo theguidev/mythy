@@ -2,17 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  user-select: none;
 }
 
 :root {
   font-size: 62.5%;
 
-  --purple: #130e16;
-  --purple_darker: #1c1521;
-  --purple_lighter: #281d2e;
-  --light: #e5e5e5;
+  --purple-900: #1c1521;
+  --purple-800: #130e16;
+  --purple-700: #281d2e;
+  --purple-600: #281d2e;
+  --purple-500: #46374e;
+  --purple-400: #6a5b75;
+  --purple-300: #957ba8;
+  --purple-200: #aa93b7;
+  --purple-100: #c9b9d0;
+
   --green: #3aa394;
   --yellow: #d3ad69;
+  --red: #d36969;
+  --purple: #8969d3;
+
+  --white: #e5e5e5;
+  --black: #141414;
 }
 
 html,
@@ -21,7 +34,7 @@ body {
   margin: 0;
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: var(--purple);
+  background: var(--purple-800);
 }
 
 a {
