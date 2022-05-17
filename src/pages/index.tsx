@@ -10,15 +10,16 @@ import Link from "next/link";
 import { KeyboardEvent, useCallback, useEffect, useRef, useState } from "react";
 import { mockAttempts } from "../../attempts";
 import { Modal } from "../components/Modal";
+import { api } from "../services/api";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [wordSubmited, setWordSubmited] = useState(false);
-  const [rightWord, setRightWord] = useState("tutor");
+  const [rightWord, setRightWord] = useState("");
+  const [isModalAboutUsOpen, setIsModalAboutUsOpen] = useState(false);
   const firstInput = useRef<HTMLInputElement>(null);
   const button_helpRef = useRef<HTMLButtonElement>(null);
   const [attempts, setAttempts] = useState(mockAttempts);
-  const [isModalAboutUsOpen, setIsModalAboutUsOpen] = useState(false);
   const [isModalHelpOpen, setIsModalHelpOpen] = useState(false);
   const [keys, setKeys] = useState([
     {
@@ -179,6 +180,16 @@ export default function Home() {
     },
   ]);
 
+  const getWord = useCallback(async () => {
+    const { data } = await api.get("/word");
+    const word: string = data.word;
+    setRightWord(word);
+  }, []);
+
+  useEffect(() => {
+    getWord();
+  }, [getWord]);
+
   const handleKeyDown = (
     e: KeyboardEvent<HTMLInputElement>,
     id: number,
@@ -283,7 +294,7 @@ export default function Home() {
     const nextAttemptIndex = newAttempts.findIndex(
       (attempt) => attempt.id === attemptId + 1
     );
-    if (word !== rightWord) nextAttempt.disabled = false;
+    if (word !== rightWord && nextAttempt) nextAttempt.disabled = false;
     attemptToUpdate.disabled = true;
     attemptToUpdate.inputs = newInputs;
     attemptToUpdate.value = word;
@@ -309,7 +320,7 @@ export default function Home() {
             <li onClick={() => setIsModalAboutUsOpen(true)}>
               <FontAwesomeIcon icon={faLandmark} />
             </li>
-            <li>
+            <li onClick={() => setIsModalHelpOpen(true)}>
               <FontAwesomeIcon icon={faCircleQuestion} />
             </li>
           </div>
@@ -334,7 +345,7 @@ export default function Home() {
                 maxLength={1}
                 onKeyDown={(e) => handleKeyDown(e, input.id, attempt.id)}
                 key={input.id}
-                value={input.value}
+                defaultValue={input.value}
                 className={
                   input.rightPlace
                     ? styles.correct
@@ -397,43 +408,45 @@ export default function Home() {
           </p>
         </Modal>
       )}
-      <Modal onClose={() => setIsModalHelpOpen(false)}>
-        <h2 className={styles.help_title}>Ajuda</h2>
-        <h4 className={styles.help_subtitle}>Como jogar</h4>
-        <div className={styles.help_img}>
-          <p>Escolha uma palavra para começar o jogo:</p>
-          <img src="/static/YellowExample.png" />
-          <p>
-            No exemplo acima, a letra "T" está na palavra, mas não está no lugar
-            correto.
+      {isModalHelpOpen && (
+        <Modal onClose={() => setIsModalHelpOpen(false)}>
+          <h2 className={styles.help_title}>Ajuda</h2>
+          <h4 className={styles.help_subtitle}>Como jogar</h4>
+          <div className={styles.help_img}>
+            <p>Escolha uma palavra para começar o jogo:</p>
+            <img src="/static/YellowExample.png" />
+            <p>
+              No exemplo acima, a letra "T" está na palavra, mas não está no
+              lugar correto.
+            </p>
+            <img src="/static/GreenExample.png" />
+            <p>
+              Neste outro exemplo, percebemos que a letra "R" está na palavra,
+              no lugar correto.
+            </p>
+            <img src="/static/GrayExample.png" />
+            <p>E neste último exemplo, a letra "U" não está na palavra.</p>
+          </div>
+          <h4 className={styles.hint_subtitle}>Dicas</h4>
+          <p className={styles.hint_text}>
+            Clique no botão abaixo e resgate uma dica!
           </p>
-          <img src="/static/GreenExample.png" />
-          <p>
-            Neste outro exemplo, percebemos que a letra "R" está na palavra, no
-            lugar correto.
-          </p>
-          <img src="/static/GrayExample.png" />
-          <p>E neste último exemplo, a letra "U" não está na palavra.</p>
-        </div>
-        <h4 className={styles.hint_subtitle}>Dicas</h4>
-        <p className={styles.hint_text}>
-          Clique no botão abaixo e resgate uma dica!
-        </p>
-        <div className={styles.hints}>
-          <button
-            ref={button_helpRef}
-            onFocus={() => {
-              setTimeout(() => {
-                button_helpRef.current.blur();
-              }, 300);
-            }}
-            className={styles.hint_button}
-          >
-            RESGATAR DICA
-          </button>
-          <p className={styles.hint}>Dica: É um deus grego.</p>
-        </div>
-      </Modal>
+          <div className={styles.hints}>
+            <button
+              ref={button_helpRef}
+              onFocus={() => {
+                setTimeout(() => {
+                  button_helpRef.current.blur();
+                }, 300);
+              }}
+              className={styles.hint_button}
+            >
+              RESGATAR DICA
+            </button>
+            <p className={styles.hint}>Dica: É um deus grego.</p>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }

@@ -48,6 +48,7 @@ Medusa
 Minotauro
 Nêmesis (Justiça)
 Ninfa
+Oceano
 Pandora
 Pégaso
 Perseu
@@ -58,6 +59,7 @@ Reia
 Sátiro
 Sereia
 Tártaro
+Têmis
 Teseu
 Tifão
 Tritão
