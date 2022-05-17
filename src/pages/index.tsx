@@ -416,16 +416,18 @@ export default function Home() {
             <p>Escolha uma palavra para começar o jogo:</p>
             <img src="/static/YellowExample.png" />
             <p>
-              No exemplo acima, a letra T está na palavra, mas não está no lugar
-              correto.
+              No exemplo acima, a letra &quot;T&quot; está na palavra, mas não
+              está no lugar correto.
             </p>
             <img src="/static/GreenExample.png" />
             <p>
-              Neste outro exemplo, percebemos que a letra R está na palavra, no
-              lugar correto.
+              Neste outro exemplo, percebemos que a letra &quot;R&quot; está na
+              palavra, no lugar correto.
             </p>
             <img src="/static/GrayExample.png" />
-            <p>E neste último exemplo, a letra U não está na palavra.</p>
+            <p>
+              E neste último exemplo, a letra &quot;U&quot; não está na palavra.
+            </p>
           </div>
           <h4 className={styles.hint_subtitle}>Dicas</h4>
           <p className={styles.hint_text}>
