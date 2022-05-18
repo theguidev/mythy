@@ -1,4 +1,4 @@
-{Mitologias}
+	{Mitologias}
 
 [Folclore Brasileiro]
 
@@ -6,6 +6,7 @@ Boitatá
 Boto
 Cuca
 Curupira
+Iara
 Lobisomem
 Saci
 
@@ -113,20 +114,24 @@ Bastet
 Esfinge
 Hórus
 Ísis
+Osíris
 Quenúbis
+Rá
+Seth
 Tote
 Uadjet
 
 [Mitologia Mesopotâmica]
 
-Ahura
+Arimã
 Anu
 Assur
 Baal
+Enlil
 Enquidu
 Inana
 Gilgamés
-Mazda
+Ormuz
 
 [Mitologia Japonesa]
 
@@ -136,7 +141,6 @@ Izanagi
 Izanami
 Kami
 Nigini
-Ryūjin
 Shinigami
 Susanoo
 Tsukuyomi
@@ -144,7 +148,6 @@ Tsukuyomi
 [Religião Hindu]
 
 Brahma
-Devi
 Ganesha
 Shiva
 
@@ -166,7 +169,7 @@ YHWH
 [Indígena]
 
 Tupã
-Iara
+Yamandú
 
 
 [Mythy]

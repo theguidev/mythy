@@ -17,33 +17,42 @@
 {
   value: "cuca",
   category: "mythology",
-  region: "brazil",
+  region: "brazilian",
   level: "easy",
-  hint: ["É brasileiro.", "Tem aparência de um jacaré.", "Uma feiticeira."]
+  hint: ["É do folclore brasileiro.", "Tem aparência de um jacaré.", "Uma feiticeira."]
 }
 
 {
   value: "curupira",
   category: "mythology",
-  region: "brazil",
+  region: "brazilian",
   level: "easy",
-  hint: ["É brasileiro.", "A aparência é humana.", "Seus pés são virados para trás."]
+  hint: ["É do folclore brasileiro.", "A aparência é humana.", "Seus pés são virados para trás."]
 }
+
+{
+  value: "iara",
+  category: "mythology",
+  region: "brazilian",
+  level: "medium",
+  hint: ["É do folclore brasileiro.", "Tinha forma de sereia.", "Uma sereia que vive no rio Amazonas."]
+}
+
 
 {
   value: "lobisomem",
   category: "mythology",
-  region: "brazil",
+  region: "brazilian",
   level: "easy",
-  hint: ["É brasileiro.", "Tem aparência de um canino.", "Surge nas sextas de lua cheia.."]
+  hint: ["É do folclore brasileiro.", "Tem aparência de um canino.", "Surge nas sextas de lua cheia.."]
 }
 
 {
   value: "saci",
   category: "mythology",
-  region: "brazil",
+  region: "brazilian",
   level: "easy",
-  hint: ["É brasileiro.", "Sua aparência é humana.", "Tem só uma perna."]
+  hint: ["É do folclore brasileiro.", "Sua aparência é humana.", "Tem só uma perna."]
 }
 
 {
@@ -493,7 +502,7 @@
   category: "mythology",
   region: "roman",
   level: "medium",
-  hint: ["É romana.", "Sua aparência é humana.", "Deusa da colheita."
+  hint: ["É romana.", "Sua aparência é humana.", "Deusa da colheita."]
 }
 
 {
@@ -742,4 +751,325 @@
   region: "norse",
   level: "extreme",
   hint: ["É nórdico.", "Tem aparência de um humano.", "A primeira criatura viva da mitologia nórdica."]
+}
+
+{
+  value: "anúbis",
+  category: "mythology",
+  region: "egyptian",
+  level: "easy",
+  hint: ["É egípcio.", "Um deus antropozoomórfico (chacal).", "Deus egípcio que conduzia os mortos no submundo."]
+}
+
+{
+  value: "anúquis",
+  category: "mythology",
+  region: "egyptian",
+  level: "hard",
+  hint: ["É egípcia.", "Deusa antropomórfica.", "Deusa egípcia da fertilidade e da água."]
+}
+
+{
+  value: "bastet",
+  category: "mythology",
+  region: "egyptian",
+  level: "medium",
+  hint: ["É egípcia.", "Deusa antropozoomórfica (gato).", "Deusa com aparência de um gato."]
+}
+
+{
+  value: "esfinge",
+  category: "mythology",
+  region: "egyptian",
+  level: "easy",
+  hint: ["É egípcio.", "Construção antropozoomórfica.", "Construção egípcia, com corpo de leão e cabeça de humano."]
+}
+
+{
+  value: "hórus",
+  category: "mythology",
+  region: "egyptian",
+  level: "easy",
+  hint: ["É egípcio.", "Deus antropozoomórfico (falcão).", "Deus dos céus e dos vivos."]
+}
+
+{
+  value: "ísis",
+  category: "mythology",
+  region: "egyptian",
+  level: "hard",
+  hint: ["É egípcia.", "Deusa antropomórfica.", "Deusa mãe de Hórus e esposa de Osíris."]
+}
+
+{
+  value: "osíris",
+  category: "mythology",
+  region: "egyptian",
+  level: "hard",
+  hint: ["É egípcio.", "Deus antropomórfico.", "Deus dos mortos."]
+}
+
+{
+  value: "quenúbis",
+  category: "mythology",
+  region: "egyptian",
+  level: "extreme",
+  hint: ["É egípcio.", "Deus antrozoomórfico (bode).", "Deus egípcio da criatividade."]
+}
+
+{
+  value: "rá",
+  category: "mythology",
+  region: "egyptian",
+  level: "a",
+  hint: ["É egípcio.", "Deus antropozoomórfico (falcão).", "Deus egípcio do Sol."]
+}
+
+{
+  value: "seth",
+  category: "mythology",
+  region: "egyptian",
+  level: "hard",
+  hint: ["É egípcio.", "Deus antropozoomórfico.", "Deus do caos, da seca e da guerra."]
+}
+
+{
+  value: "tote",
+  category: "mythology",
+  region: "egyptian",
+  level: "hard",
+  hint: ["É egípcio.", "Deus antropozoomórfico (íbis).", "Deus egípcio do conhecimento."]
+}
+
+{
+  value: "uadjet",
+  category: "mythology",
+  region: "egyptian",
+  level: "medium",
+  hint: ["É egípcio.", "Deusa antropozoomórfica (serpente).", "Deusa padroeira do Baixo Egito."]
+}
+
+{
+  value: "arimã",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Um deus de forma humana.", "Deus persa da escuridão e do mal."]
+}
+
+{
+  value: "anu",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Um deus de aparência humana.", "Deus acádio do céu."]
+}
+
+{
+  value: "assur",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "hard",
+  hint: ["É mesopotâmico.", "Deus com formato humano.", "Deus assírio, guardião da cidade de Assur e deus do Sol."]
+}
+
+{
+  value: "baal",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "medium",
+  hint: ["É mesopotâmico.", "Tinha forma humana.", "Deus mesopotâmico do clima, é mencionado na Bíblia."]
+}
+
+{
+  value: "enlil",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Deus com forma humana.", "Deus sumério das tempestades, raios e trovões."]
+}
+
+
+{
+  value: "enquidu",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Tinha forma humana.", "Criatura lendária, grande amigo de Gilgamés."]
+}
+
+{
+  value: "inana",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmica.", "Tinha forma humana.", "Deusa mesopotâmica do amor e do erotismo."]
+}
+
+{
+  value: "gilgamés",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Era um humano.", "O rei de Uruque, grande amigo de Enquidu."]
+}
+
+{
+  value: "ormuz",
+  category: "mythology",
+  region: "mesopotamian",
+  level: "extreme",
+  hint: ["É mesopotâmico.", "Sua aparência era humana.", "Deus persa do bem."]
+}
+
+{
+  value: "amaterasu",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deusa japonesa do Sol e do universo."]
+}
+
+{
+  value: "inari",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deus japonês das raposas e da fertilidade."]
+}
+
+{
+  value: "izanagi",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deus responsável pela criação do mundo."]
+}
+
+{
+  value: "izanami",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonêsa.", "Sua aparência era humana.", "A deusa japonesa da morte."]
+}
+
+{
+  value: "kami",
+  category: "mythology",
+  region: "japanese",
+  level: "medium",
+  hint: ["É japonês.", "O conjunto de deuses da mitologia japonesa.", "Um nome geral para qualquer deus japonês."]
+}
+
+{
+  value: "nigini",
+  category: "mythology",
+  region: "japanese",
+  level: "extreme",
+  hint: ["É japonês.", "Sua aparência era humana.", "O neto da deusa Amaterasu."]
+}
+
+{
+  value: "shinigami",
+  category: "mythology",
+  region: "japanese",
+  level: "medium",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deus japonês da morte."]
+}
+
+{
+  value: "susanoo",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deus japonês do mar e do sono."]
+}
+
+{
+  value: "tsukuyomi",
+  category: "mythology",
+  region: "japanese",
+  level: "hard",
+  hint: ["É japonês.", "Sua aparência era humana.", "Deus japonês da lua."]
+}
+
+{
+  value: "brahma",
+  category: "mythology",
+  region: "hindu",
+  level: "medium",
+  hint: ["É um deus hindu.", "Sua aparência era humana.", "Deus hindu da música e das canções."]
+}
+
+{
+  value: "ganesha",
+  category: "mythology",
+  region: "hindu",
+  level: "medium",
+  hint: ["É um deus hindu.", "Sua aparência era antropozoomórfica (elefante).", "Deus da sabedoria."]
+}
+
+{
+  value: "shiva",
+  category: "mythology",
+  region: "hindu",
+  level: "medium",
+  hint: ["É um deus hindu.", "Sua aparência era humana.", "Deus hindu da destruição e da transformação."]
+}
+
+{
+  value: "buda",
+  category: "mythology",
+  region: "atheism",
+  level: "easy",
+  hint: ["É um personagem budista.", "Foi um humano.", "Criador da filosofia budista."]
+}
+
+{
+  value: "alá",
+  category: "mythology",
+  region: "monotheism",
+  level: "easy",
+  hint: ["Deus islã.", "Tem forma semelhante à humana.", "O deus da crença islãmica."]
+}
+
+{
+  value: "jesus",
+  category: "mythology",
+  region: "monotheism",
+  level: "easy",
+  hint: ["Deus cristão.", "100% homem e 100% Deus.", "O filho de Deus."]
+}
+
+{
+  value: "jeová",
+  category: "mythology",
+  region: "monotheism",
+  level: "medium",
+  hint: ["Deus do Antigo Testamento.", "Forma semelhante à humana.", "Um dos nomes de deus no Antigo Testamento."]
+}
+
+{
+  value: "yhwh",
+  category: "mythology",
+  region: "monotheism",
+  level: "hard",
+  hint: ["Deus do antigo testamento.", "Forma semelhante à humana.", "Um dos nomes de deus no Antigo Testamento."]
+}
+
+{
+  value: "tupã",
+  category: "mythology",
+  region: "indian",
+  level: "hard",
+  hint: ["Entidade tupi-guarani.", "Sua forma são os sons dos trovões.", "Manifestação divina nos trovões."]
+}
+
+{
+  value: "yamandú",
+  category: "mythology",
+  region: "indian",
+  level: "extreme",
+  hint: ["Deus do antigo testamento.", "Forma semelhante à humana.", "Um dos nomes de deus no Antigo Testamento."]
 }

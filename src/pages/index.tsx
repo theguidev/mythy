@@ -305,6 +305,8 @@ export default function Home() {
     setAttempts(newAttempts);
   };
 
+  console.log(process.env.NODE_ENV)
+
   useEffect(() => {
     firstInput.current?.focus();
   }, [firstInput]);

@@ -127,14 +127,14 @@
   width: 5.5rem;
   padding: 8px;
   margin: 0.4rem;
-  background: var(--purple-700);
+  background: var(--purple-900);
   text-transform: uppercase;
   border-radius: 5px;
   transition: 1s;
 }
 
 .wasTyped {
-  background: var(--purple-900);
+  background: var(--purple-800);
 }
 
 .isOnWord {
@@ -175,6 +175,7 @@
   width: 30rem;
   margin-block: 1rem;
 }
+
 .hint_button {
   font-family: "Nunito";
   font-weight: 600;
@@ -221,7 +222,4 @@
 
 .hints {
   display: flex;
-}
-
-.hint {
 }
