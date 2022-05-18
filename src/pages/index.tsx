@@ -17,6 +17,7 @@ export default function Home() {
   const [wordSubmited, setWordSubmited] = useState(false);
   const [rightWord, setRightWord] = useState("");
   const [isModalAboutUsOpen, setIsModalAboutUsOpen] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const firstInput = useRef<HTMLInputElement>(null);
   const button_helpRef = useRef<HTMLButtonElement>(null);
   const [attempts, setAttempts] = useState(mockAttempts);
@@ -305,8 +306,6 @@ export default function Home() {
     setAttempts(newAttempts);
   };
 
-  console.log(process.env.NODE_ENV)
-
   useEffect(() => {
     firstInput.current?.focus();
   }, [firstInput]);
@@ -438,6 +437,7 @@ export default function Home() {
           <div className={styles.hints}>
             <button
               ref={button_helpRef}
+              onClick={() => setShowHint(true)}
               onFocus={() => {
                 setTimeout(() => {
                   button_helpRef.current.blur();
@@ -447,9 +447,10 @@ export default function Home() {
             >
               RESGATAR DICA
             </button>
-            <p className={styles.hint}>Dica: É um deus grego.</p>
+            {showHint &&<p className={styles.hint}>Dica: É um deus grego.</p>}
           </div>
         </Modal>
+
       )}
     </div>
   );

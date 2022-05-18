@@ -189,8 +189,6 @@
   background: var(--purple-500);
 
   transition: 0.3s cubic-bezier(0.31, 0, 0.08, 0.99);
-
-  margin-block: 1.5rem;
 }
 
 .hint_button:hover {
@@ -199,7 +197,7 @@
 
 .hint_button:focus {
   transform: scale(1.05);
-  background: var(--purple-200);
+  background: var(--purple-300);
   /* animation: buttonClick 0.5s cubic-bezier(0.31, 0, 0.08, 0.99); */
 }
 
@@ -211,7 +209,7 @@
 
   50% {
     transform: scale(1.05);
-    background: var(--purple-100);
+    background: var(--purple-300);
   }
 
   100% {
@@ -221,5 +219,14 @@
 }
 
 .hints {
+  margin-block: 1.5rem;
   display: flex;
+  justify-content: space-evenly;
+}
+
+.hint {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background: var(--purple-900);
+  border-radius: 1.2rem;
 }
